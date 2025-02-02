@@ -113,7 +113,7 @@ print(f"\nRisultato verifica: {risultato_verifica}")
 
 key = AES_gen()
 messaggio_cifrato = AES(messaggio, key)
-print("cifrato",messaggio_cifrato.decode("utf-8"))
+print("cifrato: ",messaggio_cifrato.decode("utf-8"))
 
 messaggio = SEA(messaggio_cifrato, key).decode("utf-8")
 print("decifrato: ",messaggio)
